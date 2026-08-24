@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Estudos - Química</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<script src="js/script.js"></script>
+<body>
+
+    <!-- Cabeçalho com Navegação -->
+    <header>
+        <div class="logo">
+            <h1>EducaRoxo</h1>
+        </div>
+        <nav>
+            <button class="nav-btn active" data-target="home">Início</button>
+            <button class="nav-btn" data-target="conteudo">Conteúdo</button>
+            <button class="nav-btn" data-target="videos">Vídeo Aulas</button>
+            <button class="nav-btn" data-target="questoes">Questões</button>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+
+        <!-- ABA 1: Página Inicial (Home) -->
+        <section id="home" class="tab-content active">
+    <h2>Bem-vindo à sua Plataforma de Estudos!</h2>
+
+    <p>
+        Esse site foi criado por <strong>Isaque Santos Gonçalves</strong> e está atualmente
+        em sua <strong>versão Beta</strong>. Futuramente, a plataforma poderá receber novas
+        funcionalidades, melhorias e mais conteúdos.
+    </p>
+
+    <p>
+        Por enquanto, aproveite o conteúdo disponível e, caso queira contribuir com
+        <strong>sugestões, correções ou novos resumos</strong>, entre em contato comigo!
+    </p>
+
+    <p><strong>📚 Como utilizar a plataforma:</strong></p>
+
+    <p>
+        Os tópicos abaixo apresentam os conteúdos que você poderá estudar nesta plataforma.
+    </p>
+
+    <ul>
+        <li><strong>Conteúdos:</strong> acesse os resumos e materiais de estudo.</li>
+        <li><strong>Banco de questões:</strong> pratique seus conhecimentos com questões selecionadas.</li>
+        <li><strong>Gabarito:</strong> confira suas respostas ao final.</li>
+        <li><strong>Videoaulas:</strong> foram selecionadas <strong>3 videoaulas</strong> para complementar seus estudos.</li>
+    </ul>
+
+    <p>
+        <strong>Bons estudos! 🚀</strong>
+    </p>
+            
+            <div class="topics-summary">
+                <article class="card">
+                    <h3>Oxidorredução em Química Orgânica</h3>
+                    <p>Aprenda sobre ganho e perda de ligações, agentes oxidantes e redutores, além de reações de ozonólise e combustão.</p>
+                </article>
+                <article class="card">
+                    <h3>Termoquímica</h3>
+                    <p>Estude trocas de calor, reações endotérmicas e exotérmicas, estado padrão e a Lei de Hess.</p>
+                </article>
+                <article class="card">
+                    <h3>Química da Água</h3>
+                    <p>Compreenda as propriedades do solvente universal, ciclo hidrológico e as etapas de tratamento na ETA.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ABA 2: Conteúdo Escrito -->
+        <section id="conteudo" class="tab-content">
+            <h2>Conteúdo Teórico</h2>
+            
+            <!-- TEMA 1: OXIDORREDUÇÃO -->
+            <article class="card">
+                <h3>1. Oxidorredução em Química Orgânica</h3>
+                <p>A oxidorredução em química orgânica é avaliada pelo ganho ou perda de ligações com oxigênio e hidrogênio, diferentemente da química inorgânica, onde se analisa a transferência direta de elétrons.</p>
+
+                <h4>Conceito Fundamental</h4>
+                <ul>
+                    <li><strong>Oxidação:</strong> Ocorre quando um átomo de carbono aumenta o número de ligações com átomos mais eletronegativos (como oxigênio) ou diminui o número de ligações com hidrogênio.</li>
+                    <li><strong>Redução:</strong> Ocorre quando o carbono aumenta o número de ligações com hidrogênio ou diminui o número de ligações com oxigênio.</li>
+                    <li><strong>Agente Oxidante:</strong> A substância que provoca a oxidação no composto orgânico e sofre redução no processo (ex: permanganato de potássio, dicromato de potássio).</li>
+                    <li><strong>Agente Redutor:</strong> A substância que provoca a redução e sofre oxidação (ex: gás hidrogênio na presença de catalisadores, hidreto de alumínio e lítio).</li>
+                </ul>
+
+                <h4>Principais Reações de Oxidação</h4>
+                <h5>Oxidação de Álcoois</h5>
+                <ul>
+                    <li><strong>Álcool Primário:</strong> Oxida inicialmente gerando um aldeído. Se o meio for fortemente oxidante, o aldeído continua oxidando até formar um ácido carboxílico.</li>
+                    <li><strong>Álcool Secundário:</strong> Oxida gerando uma cetona. Cetonas são resistentes a oxidações brandas.</li>
+                    <li><strong>Álcool Terciário:</strong> Não sofre oxidação em condições normais, pois o carbono ligado à hidroxila não possui hidrogênios disponíveis para serem retirados.</li>
+                </ul>
+
+                <h5>Oxidação de Alcenos</h5>
+                <ul>
+                    <li><strong>Oxidação Branda (Reativo de Baeyer):</strong> Ocorre em meio neutro ou levemente básico e diluído. Quebra apenas a ligação pi do alceno, formando um diol vizinho (glicol).</li>
+                    <li><strong>Oxidação Enérgica:</strong> Ocorre em meio ácido e concentrado com aquecimento. Quebra totalmente a ligação dupla do alceno. Se o carbono da dupla for primário, produz dióxido de carbono e água. Se for secundário, produz um ácido carboxílico. Se for terciário, produz uma cetona.</li>
+                    <li><strong>Ozonólise:</strong> Reação do alceno com ozônio na presença de água e zinco. Quebra a ligação dupla. Carbonos secundários formam aldeídos (o zinco impede que o aldeído vire ácido). Carbonos terciários formam cetonas.</li>
+                </ul>
+
+                <h5>Combustão (Oxidação Total)</h5>
+                <ul>
+                    <li><strong>Combustão Completa:</strong> Ocorre com abundância de oxigênio. O composto orgânico é totalmente oxidado, produzindo dióxido de carbono e água com grande liberação de energia.</li>
+                    <li><strong>Combustão Incompleta:</strong> Ocorre com limitação de oxigênio, produzindo monóxido de carbono ou carbono elementar (fuligem) e água.</li>
+                </ul>
+
+                <h4>Principais Reações de Redução</h4>
+                <ul>
+                    <li><strong>Hidrogenação Catalítica (Redução de Alcenos e Alcinos):</strong> Adição de gás hidrogênio na presença de catalisadores metálicos (como níquel, platina ou paládio). Converte alcenos e alcinos em alcanos.</li>
+                    <li><strong>Redução de Aldeídos e Cetonas:</strong> A adição de hidrogênio (ou ação de redutores como borohidreto de sódio) reverte o processo de oxidação. Aldeídos são reduzidos a álcoois primários; cetonas são reduzidas a álcoois secundários.</li>
+                    <li><strong>Redução de Ácidos Carboxílicos:</strong> Ácidos carboxílicos exigem redutores fortes (como hidreto de alumínio e lítio) para serem reduzidos primeiramente a aldeídos e, em seguida, a álcoois primários.</li>
+                </ul>
+
+                <h4>Escala Comparativa de Nox em Carbonos Orgânicos</h4>
+                <p>Do estado mais reduzido ao mais oxidado:</p>
+                <ol>
+                    <li>Alcanos (Estado mais reduzido, rico em hidrogênio)</li>
+                    <li>Álcoois</li>
+                    <li>Aldeídos e Cetonas</li>
+                    <li>Ácidos Carboxílicos</li>
+                    <li>Dióxido de Carbono (Estado mais oxidado, máximo de ligações com oxigênio)</li>
+                </ol>
+            </article>
+
+            <!-- TEMA 2: TERMOQUÍMICA -->
+            <article class="card">
+                <h3>2. Termoquímica</h3>
+                <p>A Termoquímica é o ramo da Química que estuda as trocas de calor e energia envolvidas nas reações químicas e nas mudanças de estado físico.</p>
+
+                <h4>1. Conceitos Fundamentais</h4>
+                <ul>
+                    <li><strong>Sistema e Vizinhança:</strong> O sistema é a porção do universo sob estudo (ex.: os reagentes dentro de um frasco). A vizinhança é tudo o que cerca esse sistema.</li>
+                    <li><strong>Calor (q):</strong> É a energia em trânsito transferida entre o sistema e a vizinhança devido a uma diferença de temperatura.</li>
+                    <li><strong>Temperatura:</strong> Medida do grau de agitação das partículas que compõem uma substância.</li>
+                    <li><strong>Entalpia (H):</strong> Conteúdo de energia térmica armazenado nas ligações químicas de uma substância a pressão constante. Mede-se a variação de entalpia (ΔH) ocorrida no processo.</li>
+                </ul>
+
+                <h4>2. Tipos de Reações Térmicas</h4>
+                <h5>Reações Exotérmicas</h5>
+                <ul>
+                    <li>Libertam calor para o ambiente.</li>
+                    <li>A energia contida nos reagentes é maior do que a energia contida nos produtos.</li>
+                    <li>A variação de entalpia tem valor negativo (menor que zero).</li>
+                    <li>Sensação ao toque: a mistura ou o recipiente esquenta.</li>
+                    <li><em>Exemplos:</em> Queima de combustível (combustão), formação de gelo, respiração celular.</li>
+                </ul>
+
+                <h5>Reações Endotérmicas</h5>
+                <ul>
+                    <li>Absorvem calor do ambiente.</li>
+                    <li>A energia contida nos reagentes é menor do que a energia contida nos produtos.</li>
+                    <li>A variação de entalpia tem valor positivo (maior que zero).</li>
+                    <li>Sensação ao toque: a mistura ou o recipiente esfria.</li>
+                    <li><em>Exemplos:</em> Fotossíntese, fusão do gelo, bolsa de gelo instantâneo.</li>
+                </ul>
+
+                <h4>3. Estados Padrão e Entalpias Específicas</h4>
+                <p><strong>Estado Padrão:</strong> Substância na sua forma alotrópica mais estável a 25 °C e 1 atmosfera de pressão.</p>
+                <ul>
+                    <li><strong>Entalpia Padrão de Formação:</strong> Energia envolvida na formação de 1 mol de uma substância a partir de substâncias simples no estado padrão. Por convenção, toda substância simples no estado padrão tem entalpia igual a zero.</li>
+                    <li><strong>Entalpia de Combustão:</strong> Energia liberada na queima completa de 1 mol de uma substância em presença de oxigênio. É sempre um processo exotérmico.</li>
+                    <li><strong>Entalpia de Ligação:</strong> Energia necessária para quebrar 1 mol de ligações no estado gasoso. A quebra de ligações é sempre endotérmica e a formação é sempre exotérmica.</li>
+                </ul>
+
+                <h4>4. Lei de Hess</h4>
+                <p>A Lei de Hess estabelece que a variação de entalpia de uma reação química depende apenas dos estados inicial (reagentes) e final (produtos), independentemente do caminho percorrido.</p>
+                <ul>
+                    <li>Se uma reação for invertida, o sinal da sua variação de entalpia também deve ser invertido.</li>
+                    <li>Se os coeficientes forem multiplicados ou divididos por um número, o ΔH sofre a mesma operação.</li>
+                    <li>O valor total da variação de entalpia é a soma das variações de entalpia de cada etapa individual.</li>
+                </ul>
+
+                <h4>5. Fatores que Alteram a Variação de Entalpia</h4>
+                <ul>
+                    <li><strong>Quantidade de Matéria:</strong> O calor é proporcional à quantidade de reagentes consumidos.</li>
+                    <li><strong>Estado Físico:</strong> O estado gasoso possui mais energia armazenada que o líquido, e o líquido mais que o sólido.</li>
+                    <li><strong>Forma Alotrópica:</strong> Estruturas distintas (como grafite e diamante) possuem entalpias de formação diferentes.</li>
+                    <li><strong>Temperatura e Pressão:</strong> Alterações nas condições ambientes afetam a energia contida no sistema.</li>
+                </ul>
+            </article>
+
+            <!-- TEMA 3: ÁGUA -->
+            <article class="card">
+                <h3>3. A Química da Água</h3>
+                <p>A água é uma substância química essencial para a manutenção da vida na Terra, cobrindo cerca de 71% da superfície do planeta.</p>
+
+                <h4>Importância da Água</h4>
+                <ul>
+                    <li><strong>Para os seres vivos:</strong> Compõe cerca de 60% a 70% do corpo humano. Atua no transporte de nutrientes, regulação térmica (suor) e eliminação de resíduos.</li>
+                    <li><strong>Para o planeta:</strong> Atua como regulador térmico global e é indispensável para a agricultura, geração de energia e indústria.</li>
+                </ul>
+
+                <h4>Propriedades Químicas</h4>
+                <ul>
+                    <li><strong>Solvente Universal:</strong> Capacidade de dissolver uma enorme quantidade de substâncias polares (sais, açúcares, proteínas).</li>
+                    <li><strong>Tensão Superficial:</strong> Atração forte entre moléculas da superfície que cria uma "película" resistente.</li>
+                    <li><strong>Anomalia da Água:</strong> Ao congelar, expande-se e fica menos densa que a água líquida, fazendo o gelo flutuar.</li>
+                </ul>
+
+                <h4>O Ciclo Hidrológico</h4>
+                <ul>
+                    <li><strong>Evaporação:</strong> Passagem do estado líquido para o gasoso nos corpos d'água.</li>
+                    <li><strong>Transpiração:</strong> Liberação de vapor pelos seres vivos.</li>
+                    <li><strong>Condensação:</strong> O vapor resfria na atmosfera e forma as nuvens.</li>
+                    <li><strong>Precipitação:</strong> Queda de água em forma de chuva, neve ou granizo.</li>
+                    <li><strong>Infiltração e Escoamento:</strong> Penetração no solo alimentando aquíferos e retorno aos rios/oceanos.</li>
+                </ul>
+
+                <h4>Tratamento de Água (ETA)</h4>
+                <ol>
+                    <li><strong>Coagulação e Floculação:</strong> Adição de produtos químicos para unir impurezas em flocos.</li>
+                    <li><strong>Decantação:</strong> Flocos pesados afundam no fundo dos tanques.</li>
+                    <li><strong>Filtração:</strong> Passagem por camadas de areia, cascalho e carvão ativado.</li>
+                    <li><strong>Desinfecção:</strong> Adição de cloro ou ozônio para eliminar patógenos.</li>
+                    <li><strong>Fluoretação:</strong> Adição de flúor para auxiliar na prevenção de cáries.</li>
+                </ol>
+
+                <h4>Desafios Atuais</h4>
+                <p>Apenas cerca de 2,5% de toda a água do planeta é doce, e menos de 1% está facilmente acessível. O uso consciente e o saneamento básico são fundamentais.</p>
+            </article>
+        </section>
+
+        <!-- ABA 3: Vídeo Aulas (YouTube) -->
+        <section id="videos" class="tab-content">
+            <h2>Vídeo Aulas</h2>
+            <div class="video-grid">
+                
+                <div class="card video-card">
+                    <h3>Oxidorredução Orgânica</h3>
+                    <!-- ======================================================== -->
+                    <!-- COLE AQUI O LINK DO YOUTUBE SE DESEJAR                    -->
+                    <!-- ======================================================== -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J-ri95fkKbM?si=KBPP6Dg7sGvyD5E2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="card video-card">
+                    <h3>Termoquímica</h3>
+                    <!-- COLE AQUI O LINK DO YOUTUBE SE DESEJAR -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5aPH2E9UxhM?si=FfrSF8KQl5l88ZB-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="card video-card">
+                    <h3>Propriedades e Tratamento da Água</h3>
+                    <!-- COLE AQUI O LINK DO YOUTUBE SE DESEJAR -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AKpao58ahtA?si=tf6T1jlR9bVKQ0dH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABA 4: Banco de Questões -->
+        <section id="questoes" class="tab-content">
+            <h2>Banco de Questões</h2>
+            <form id="quiz-form">
+                
+                <!-- SEÇÃO 1: OXIDORREDUÇÃO -->
+                <h3>Módulo 1: Oxidorredução em Química Orgânica</h3>
+
+                <div class="card question-card" data-resposta-correta="c" data-explicacao="C — A oxidação ocorre quando o carbono se liga a elementos mais eletronegativos (como o oxigênio), aumentando seu Nox relativo.">
+                    <p class="enunciado"><strong>Questão 1 (Conceito e Nox):</strong> Em química orgânica, os processos de oxidação e redução não são determinados apenas pela perda e ganho direto de elétrons, mas sim pelo arranjo das ligações químicas do carbono. Qual das alternativas a seguir descreve corretamente o que caracteriza uma oxidação em um composto orgânico?</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q1" value="a"> a) Aumento no número de ligações do carbono com hidrogênio.</label>
+                        <label><input type="radio" name="q1" value="b"> b) Redução na quantidade de átomos de oxigênio na estrutura.</label>
+                        <label><input type="radio" name="q1" value="c"> c) Aumento no número de ligações do carbono com átomos mais eletronegativos, como o oxigênio.</label>
+                        <label><input type="radio" name="q1" value="d"> d) Manutenção do número de oxidação (Nox) do carbono após a reação.</label>
+                        <label><input type="radio" name="q1" value="e"> e) Ganho de prótons pelo átomo de carbono central.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card question-card" data-resposta-correta="b" data-explicacao="B — Álcoois primários oxidam a aldeídos e depois a ácidos carboxílicos; secundários geram cetonas; terciários não oxidam facilmente por não terem hidrogênio no carbono da hidroxila.">
+                    <p class="enunciado"><strong>Questão 2 (Oxidação de Álcoois):</strong> Um químico submeteu três frascos contendo álcoois diferentes (um primário, um secundário e um terciário) a um tratamento com solução ácida de dicromato de potássio sob aquecimento suave. Sobre os produtos esperados para cada tipo de álcool, assinale a afirmação correta:</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q2" value="a"> a) O álcool terciário é o mais reativo e oxida rapidamente a ácido carboxílico.</label>
+                        <label><input type="radio" name="q2" value="b"> b) O álcool primário oxida a aldeído e, em meio oxidante, pode chegar a ácido carboxílico.</label>
+                        <label><input type="radio" name="q2" value="c"> c) O álcool secundário não reage sob nenhuma condição oxidante.</label>
+                        <label><input type="radio" name="q2" value="d"> d) O álcool secundário oxida formando um aldeído de mesma cadeia carbônica.</label>
+                        <label><input type="radio" name="q2" value="e"> e) O álcool primário transforma-se diretamente em uma cetona.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card question-card" data-resposta-correta="d" data-explicacao="D — Na oxidação enérgica, carbonos primários viram CO2 e H2O, carbonos secundários geram ácidos carboxílicos e terciários geram cetonas.">
+                    <p class="enunciado"><strong>Questão 3 (Oxidação Enérgica de Alcenos):</strong> A oxidação enérgica de alcenos ocorre em meio ácido concentrado e sob aquecimento, promovendo a ruptura total da ligação dupla. Se um alceno que possui um carbono secundário na dupla ligação for submetido a essa reação, o produto orgânico principal formado nesse carbono será um(a):</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q3" value="a"> a) Álcool primário.</label>
+                        <label><input type="radio" name="q3" value="b"> b) Diol vizinho.</label>
+                        <label><input type="radio" name="q3" value="c"> c) Cetona.</label>
+                        <label><input type="radio" name="q3" value="d"> d) Ácido carboxílico.</label>
+                        <label><input type="radio" name="q3" value="e"> e) Gás carbônico e água.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card question-card" data-resposta-correta="a" data-explicacao="A — A redução (adição de H2) reverte a oxidação: cetonas voltam a ser álcoois secundários e aldeídos voltam a ser álcoois primários.">
+                    <p class="enunciado"><strong>Questão 4 (Redução de Compostos Carbonilados):</strong> A reação de hidrogenação catalítica aplicada a compostos orgânicos funciona como um processo de redução. Ao submeter uma cetona e um aldeído a um processo de redução completa com gás hidrogênio e catalisador metálico, obtêm-se, respectivamente:</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q4" value="a"> a) Álcool secundário e álcool primário.</label>
+                        <label><input type="radio" name="q4" value="b"> b) Álcool primário e ácido carboxílico.</label>
+                        <label><input type="radio" name="q4" value="c"> c) Ácido carboxílico e alceno.</label>
+                        <label><input type="radio" name="q4" value="d"> d) Álcool terciário e álcool secundário.</label>
+                        <label><input type="radio" name="q4" value="e"> e) Alceno e alcano.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card question-card" data-resposta-correta="b" data-explicacao="B — O zinco atua consumindo o peróxido de hidrogênio formado, impedindo que os aldeídos obtidos dos carbonos secundários sejam oxidados a ácidos carboxílicos.">
+                    <p class="enunciado"><strong>Questão 5 (Escala de Oxidação e Ozonólise):</strong> A ozonólise de um alceno é uma reação específica que quebra a ligação dupla utilizando ozônio na presença de água e zinco. O papel do zinco nessa reação e a oxidação dos carbonos envolvidos garantem que:</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q5" value="a"> a) Carbonos secundários da dupla sejam oxidados até ácidos carboxílicos.</label>
+                        <label><input type="radio" name="q5" value="b"> b) Carbonos secundários da dupla formem aldeídos, pois o zinco impede a oxidação posterior.</label>
+                        <label><input type="radio" name="q5" value="c"> c) A reação produza exclusivamente álcoois terciários.</label>
+                        <label><input type="radio" name="q5" value="d"> d) A ligação dupla não seja quebrada, apenas adicionando hidrogênios.</label>
+                        <label><input type="radio" name="q5" value="e"> e) O composto orgânico seja totalmente degradado em dióxido de carbono e água.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+
+                <!-- SEÇÃO 2: TERMOQUÍMICA -->
+                <h3>Módulo 2: Termoquímica</h3>
+
+                <div class="card question-card" data-resposta-correta="b" data-explicacao="Questão 1: B — A sensação de resfriamento indica que o sistema absorveu calor da vizinhança, caracterizando um processo endotérmico (variação de entalpia maior que zero).">
+                    <p class="enunciado"><strong>Questão 1:</strong> Um estudante observou que, ao dissolver determinado sal em água dentro de um copo de vidro, a superfície do frasco ficou visivelmente fria ao toque. Com base nos conceitos da termoquímica, qual é a classificação dessa reação e o que ocorre com a energia do sistema?</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q6" value="a"> A) Reação exotérmica, com liberação de calor para o ambiente e variação de entalpia negativa.</label>
+                        <label><input type="radio" name="q6" value="b"> B) Reação endotérmica, com absorção de calor do ambiente e variação de entalpia positiva.</label>
+                        <label><input type="radio" name="q6" value="c"> C) Reação exotérmica, com absorção de calor do ambiente e variação de entalpia positiva.</label>
+                        <label><input type="radio" name="q6" value="d"> D) Reação endotérmica, com liberação de calor para o ambiente e variação de entalpia negativa.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card question-card" data-resposta-correta="a" data-explicacao="Questão 2: A — Por convenção, toda substância simples em sua forma alotrópica mais estável, a 25 °C e 1 atm, possui entalpia padrão igual a zero.">
+                    <p class="enunciado"><strong>Questão 2:</strong> Na termoquímica, adota-se a convenção de Estado Padrão para comparar a energia das substâncias. Qual das alternativas apresenta uma condição correta associada ao estado padrão de uma substância simples?</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q7" value="a"> A) Apresenta entalpia padrão definida convencionalmente como igual a zero.</label>
+                        <label><input type="radio" name="q7" value="b"> B) Deve estar obrigatoriamente na forma alotrópica menos estável.</label>
+                        <label><input type="radio" name="q7" value="c"> C) Necessita passar por uma reação de combustão completa para ter valor definido.</label>
+                        <label><input type="radio" name="q7" value="d"> D) Apresenta variação de entalpia sempre positiva, independentemente da temperatura.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card question-card" data-resposta-correta="b" data-explicacao="Questão 3: B — O estado gasoso possui maior grau de agitação e maior conteúdo energético (entalpia) que o líquido. Por isso, passar de líquido para gás exige absorção de calor.">
+                    <p class="enunciado"><strong>Questão 3:</strong> O processo de transformação da água líquida em vapor de água (vaporização) exige o fornecimento contínuo de calor. Por outro lado, a condensação do vapor em água líquida libera calor. Isso ocorre porque:</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q8" value="a"> A) A quebra de ligações químicas no estado líquido sempre libera energia para o meio.</label>
+                        <label><input type="radio" name="q8" value="b"> B) A entalpia do estado gasoso é maior do que a entalpia do estado líquido.</label>
+                        <label><input type="radio" name="q8" value="c"> C) A variação de entalpia da condensação é positiva, tornando-a endotérmica.</label>
+                        <label><input type="radio" name="q8" value="d"> D) O estado sólido e o estado gasoso possuem exatamente a mesma entalpia.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card question-card" data-resposta-correta="c" data-explicacao="Questão 4: C — A Lei de Hess afirma que a variação de entalpia depende apenas do ponto de partida (reagentes) e do ponto de chegada (produtos).">
+                    <p class="enunciado"><strong>Questão 4:</strong> A Lei de Hess é fundamental no estudo da termoquímica pois permite calcular a variação de entalpia de reações complexas. De acordo com essa lei, a variação de entalpia de um processo depende exclusivamente de:</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q9" value="a"> A) Número de etapas intermediárias pelas quais a reação passa.</label>
+                        <label><input type="radio" name="q9" value="b"> B) Velozes modificações nos catalisadores utilizados no processo.</label>
+                        <label><input type="radio" name="q9" value="c"> C) Estados inicial e final do sistema, independentemente do caminho percorrido.</label>
+                        <label><input type="radio" name="q9" value="d"> D) Quantidade de energia perdida na forma de luz durante a reação.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card question-card" data-resposta-correta="a" data-explicacao="Questão 5: A — Romper ligações exige energia (endotérmico); formar novas ligações libera energia (exotérmico).">
+                    <p class="enunciado"><strong>Questão 5:</strong> Sobre a energia envolvida no rompimento e na formação de ligações químicas, é correto afirmar que:</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q10" value="a"> A) A quebra de ligações químicas é um processo endotérmico, enquanto a formação de ligações é exotérmica.</label>
+                        <label><input type="radio" name="q10" value="b"> B) Tanto a quebra quanto a formação de ligações químicas são processos que liberam calor.</label>
+                        <label><input type="radio" name="q10" value="c"> C) A formação de ligações químicas absorve calor do ambiente para estabilizar os átomos.</label>
+                        <label><input type="radio" name="q10" value="d"> D) A ruptura de ligações gasosas apresenta variação de entalpia com valor negativo.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+
+                <!-- SEÇÃO 3: QUÍMICA DA ÁGUA -->
+                <h3>Módulo 3: Química da Água</h3>
+
+                <div class="card question-card" data-resposta-correta="b" data-explicacao="Questão 1: B — A água dissolve substâncias polares devido às suas cargas parciais. Ela não dissolve tudo (como óleos e gorduras, que são apolares).">
+                    <p class="enunciado"><strong>Questão 1:</strong> A água é amplamente conhecida como o 'solvente universal'. Qual das alternativas a seguir explica corretamente o motivo dessa denominação?</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q11" value="a"> a) Ela consegue dissolver absolutamente todas as substâncias existentes na Terra.</label>
+                        <label><input type="radio" name="q11" value="b"> b) Ela tem a capacidade de dissolver uma enorme quantidade de substâncias polares, como sais e açúcares.</label>
+                        <label><input type="radio" name="q11" value="c"> c) Ela só dissolve compostos orgânicos e apolares, como gorduras e óleos.</label>
+                        <label><input type="radio" name="q11" value="d"> d) Ela se transforma em vapor rapidamente ao entrar em contato com qualquer sólido.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card question-card" data-resposta-correta="c" data-explicacao="Questão 2: C — A condensação ocorre quando o vapor de água sobe, encontra temperaturas mais baixas e passa do estado gasoso para o líquido, formando as nuvens.">
+                    <p class="enunciado"><strong>Questão 2:</strong> Durante as etapas do ciclo hidrológico, qual é o processo responsável por transformar o vapor de água da atmosfera em nuvens?</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q12" value="a"> a) Evaporação</label>
+                        <label><input type="radio" name="q12" value="b"> b) Infiltração</label>
+                        <label><input type="radio" name="q12" value="c"> c) Condensação</label>
+                        <label><input type="radio" name="q12" value="d"> d) Escoamento</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card question-card" data-resposta-correta="b" data-explicacao="Questão 3: B — As moléculas da superfície da água sofrem uma atração interna que gera uma espécie de 'película resistente', chamada de tensão superficial.">
+                    <p class="enunciado"><strong>Questão 3:</strong> Certos insetos conseguem andar sobre a superfície da água sem afundar. Esse fenômeno ocorre devido a qual propriedade física da água?</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q13" value="a"> a) Anomalia da densidade</label>
+                        <label><input type="radio" name="q13" value="b"> b) Tensão superficial</label>
+                        <label><input type="radio" name="q13" value="c"> c) Alta capacidade de difusão</label>
+                        <label><input type="radio" name="q13" value="d"> d) Ponto de ebulição elevado</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card question-card" data-resposta-correta="b" data-explicacao="Questão 4: B — A floculação junta as partículas sutis de sujeira com o auxílio de produtos químicos, tornando-as flocos maiores que afundam na decantação.">
+                    <p class="enunciado"><strong>Questão 4:</strong> Nas Estações de Tratamento de Água (ETA), qual é a finalidade da etapa de Floculação?</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q14" value="a"> a) Eliminar microrganismos e bactérias nocivas com a aplicação de cloro.</label>
+                        <label><input type="radio" name="q14" value="b"> b) Fazer com que as impurezas se agreguem em flocos maiores e mais pesados para facilitar a separação.</label>
+                        <label><input type="radio" name="q14" value="c"> c) Passar a água por camadas de areia e carvão para reter sujeiras microscópicas.</label>
+                        <label><input type="radio" name="q14" value="d"> d) Adicionar flúor para auxiliar na saúde bucal da população.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="card question-card" data-resposta-correta="d" data-explicacao="Questão 5: D — Do total de água do planeta, cerca de 97,5% é salgada e apenas aproximadamente 2,5% é água doce.">
+                    <p class="enunciado"><strong>Questão 5:</strong> Embora cerca de 71% da superfície do planeta seja coberta por água, a maior parte dela não está disponível diretamente para o consumo humano. Qual é o percentual aproximado de água doce no planeta?</p>
+                    <div class="opcoes">
+                        <label><input type="radio" name="q15" value="a"> a) Cerca de 50%</label>
+                        <label><input type="radio" name="q15" value="b"> b) Cerca de 25%</label>
+                        <label><input type="radio" name="q15" value="c"> c) Cerca de 10%</label>
+                        <label><input type="radio" name="q15" value="d"> d) Cerca de 2,5%</label>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <button type="button" id="btn-gabarito">Verificar Gabarito</button>
+            </form>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

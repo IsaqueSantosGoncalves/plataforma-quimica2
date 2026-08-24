@@ -1,0 +1,311 @@
+/* ================================================
+   VARIÁVEIS DE CORES E CONFIGURAÇÕES GERAIS
+   ================================================ */
+:root {
+    --bg-primary: #121214;       /* Fundo escuro principal */
+    --bg-secondary: #1e1e24;     /* Fundo dos cards e contêineres */
+    --bg-card-hover: #292932;    /* Efeito hover nos cards */
+    --purple-primary: #8257e5;   /* Roxo principal */
+    --purple-hover: #996dff;     /* Roxo mais claro para hover */
+    --purple-light: #2a223d;     /* Roxo escuro sutil para fundos */
+    --text-color: #ffffff;       /* Texto principal em branco */
+    --text-muted: #a8a8b3;       /* Texto secundário/suave */
+    --correct-color: #04d361;    /* Verde para acertos no gabarito */
+    --wrong-color: #f75a68;      /* Vermelho para erros no gabarito */
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* ================================================
+   CABEÇALHO E NAVEGAÇÃO
+   ================================================ */
+header {
+    background-color: var(--bg-secondary);
+    border-bottom: 2px solid var(--purple-primary);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.logo h1 span, .logo h1 {
+    background: linear-gradient(90deg, #ffffff, var(--purple-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: var(--text-muted);
+    border: 1px solid transparent;
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--border-radius);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.nav-btn:hover {
+    color: var(--text-color);
+    background-color: var(--purple-light);
+}
+
+.nav-btn.active {
+    background-color: var(--purple-primary);
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(130, 87, 229, 0.5);
+}
+
+/* ================================================
+   CONTEÚDO PRINCIPAL E ABAS
+   ================================================ */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* REGRA ESSENCIAL: Esconde todas as abas por padrão */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Exibe apenas a aba que tiver a classe .active */
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--purple-primary);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--purple-light);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+h4 {
+    color: var(--purple-hover);
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    color: var(--text-muted);
+    margin-top: 0.8rem;
+    font-size: 1rem;
+}
+
+p {
+    color: #dcdce6;
+    margin-bottom: 1rem;
+}
+
+ul, ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #dcdce6;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+/* ================================================
+   CARDS E BLOCOS DE CONTEÚDO
+   ================================================ */
+.card {
+    background-color: var(--bg-secondary);
+    border: 1px solid #2e2e38;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+}
+
+.card:hover {
+    border-color: var(--purple-primary);
+}
+
+.topics-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* ================================================
+   VÍDEO AULAS
+   ================================================ */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: var(--border-radius);
+    margin-top: 1rem;
+}
+
+/* ================================================
+   BANCO DE QUESTÕES
+   ================================================ */
+.question-card {
+    border-left: 4px solid var(--purple-primary);
+}
+
+.enunciado {
+    font-size: 1.05rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.opcoes label {
+    background-color: var(--bg-primary);
+    padding: 0.8rem 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #292932;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.opcoes label:hover {
+    background-color: var(--purple-light);
+    border-color: var(--purple-primary);
+}
+
+.opcoes input[type="radio"] {
+    accent-color: var(--purple-primary);
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Feedback do Gabarito */
+.feedback {
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    display: none; /* Exibido via JavaScript posteriormente */
+}
+
+.feedback.correto {
+    display: block;
+    background-color: rgba(4, 211, 97, 0.15);
+    border: 1px solid var(--correct-color);
+    color: var(--correct-color);
+}
+
+.feedback.incorreto {
+    display: block;
+    background-color: rgba(247, 90, 104, 0.15);
+    border: 1px solid var(--wrong-color);
+    color: var(--wrong-color);
+}
+
+/* Botão de Gabarito */
+#btn-gabarito {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto 0;
+    padding: 1rem;
+    background-color: var(--purple-primary);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(130, 87, 229, 0.4);
+}
+
+#btn-gabarito:hover {
+    background-color: var(--purple-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(153, 109, 255, 0.6);
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}
